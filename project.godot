@@ -10,12 +10,30 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "KinematicBody2D",
+"class": "Ball",
+"language": "GDScript",
+"path": "res://game/ball/ball.gd"
+}, {
+"base": "StaticBody2D",
+"class": "Brick",
+"language": "GDScript",
+"path": "res://game/brick/brick.gd"
+}, {
+"base": "KinematicBody2D",
 "class": "Paddle",
 "language": "GDScript",
 "path": "res://game/paddle/paddle.gd"
+}, {
+"base": "StaticBody2D",
+"class": "Walls",
+"language": "GDScript",
+"path": "res://game/walls/walls.gd"
 } ]
 _global_script_class_icons={
-"Paddle": ""
+"Ball": "",
+"Brick": "",
+"Paddle": "",
+"Walls": ""
 }
 
 [application]
