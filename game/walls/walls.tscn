@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 550, 20 )
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 20, 300 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 20, 300 )
+
+[node name="Walls" type="StaticBody2D"]
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+
+[node name="TopShape" type="CollisionShape2D" parent="."]
+position = Vector2( 510, -20 )
+shape = SubResource( 3 )
+_sections_unfolded = [ "Material", "Pause", "Script", "Transform", "Visibility", "Z Index", "shape" ]
+
+[node name="LeftShape" type="CollisionShape2D" parent="."]
+position = Vector2( -20, 300 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Pause", "Script", "Transform", "Visibility", "Z Index", "shape" ]
+
+[node name="RightShape" type="CollisionShape2D" parent="."]
+position = Vector2( 1040, 300 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Material", "Pause", "Script", "Transform", "Visibility", "Z Index", "shape" ]
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PoolVector2Array( 0, 600, 0, 0, 1020, 0, 1020, 600 )
+width = 10.0
+default_color = Color( 0.466667, 0.466667, 0.466667, 1 )
+sharp_limit = 2.0
+round_precision = 8
+_sections_unfolded = [ "Border", "Capping", "Fill", "gradient" ]
+
