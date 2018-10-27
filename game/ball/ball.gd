@@ -8,10 +8,14 @@ extends KinematicBody2D
 var motion = Vector2()
 
 # The starting ball speed
-var base_speed = 210
+var base_speed = 275
 
 # Speed factor on every bounce
 var speed_factor = 1.01
+
+# The maximum possible deflection
+# (relatve to the ball's current horizontal speed)
+var max_deflection = 200
 
 func _draw():
 	draw_circle(Vector2(), 10.0, Color(0.9, 0.9, 0.9, 1))
@@ -25,3 +29,10 @@ func _physics_process(delta):
 	if collision:
 		motion = motion.bounce(collision.normal)
 		motion *= speed_factor
+
+		if collision.collider is Paddle:
+			var paddle = collision.collider
+			var extents = paddle.get_node("CollisionShape2D").shape.extents.x
+
+			# The ball will deflect if it hit close to one of the paddle's edges
+			motion.x += max_deflection * (collision.position.x - paddle.position.x) / extents
