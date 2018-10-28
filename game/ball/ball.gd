@@ -34,7 +34,7 @@ func _physics_process(delta):
 
 		if collision.collider is Brick:
 			var brick = collision.collider
-			brick.queue_free()
+			brick.destroy()
 
 		if collision.collider is Paddle:
 			var paddle = collision.collider
