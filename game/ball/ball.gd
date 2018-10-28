@@ -26,7 +26,7 @@ func _ready():
 	reset()
 
 func _physics_process(delta):
-	var collision = move_and_collide(motion*delta)
+	var collision = move_and_collide(motion * delta)
 
 	if collision:
 		motion = motion.bounce(collision.normal)
