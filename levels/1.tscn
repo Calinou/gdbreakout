@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://game/brick/brick.tscn" type="PackedScene" id=1]
+[ext_resource path="res://game/brick/unbreakable_brick.tscn" type="PackedScene" id=2]
 
 [node name="Level" type="Node2D"]
 position = Vector2( -10, 20 )
@@ -62,3 +63,8 @@ position = Vector2( 670, 50 )
 [node name="Brick17" parent="." instance=ExtResource( 1 )]
 position = Vector2( 970, 50 )
 
+[node name="UnbreakableBrick" parent="." instance=ExtResource( 2 )]
+position = Vector2( 570, 200 )
+
+[node name="UnbreakableBrick2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 470, 200 )

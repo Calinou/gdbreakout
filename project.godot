@@ -25,6 +25,11 @@ _global_script_classes=[ {
 "path": "res://game/paddle/paddle.gd"
 }, {
 "base": "StaticBody2D",
+"class": "UnbreakableBrick",
+"language": "GDScript",
+"path": "res://game/brick/unbreakable_brick.gd"
+}, {
+"base": "StaticBody2D",
 "class": "Walls",
 "language": "GDScript",
 "path": "res://game/walls/walls.gd"
@@ -33,6 +38,7 @@ _global_script_class_icons={
 "Ball": "",
 "Brick": "",
 "Paddle": "",
+"UnbreakableBrick": "",
 "Walls": ""
 }
 

@@ -9,8 +9,9 @@ extents = Vector2( 24, 10 )
 
 [sub_resource type="Gradient" id=2]
 
-offsets = PoolRealArray( 0, 1 )
-colors = PoolColorArray( 0, 0, 0, 0, 0.910706, 1, 0.398438, 1 )
+offsets = PoolRealArray( 0, 0.5, 1 )
+colors = PoolColorArray( 0.701477, 1, 0.429688, 1, 0.652832, 1, 0.4375, 0.25098, 0.677185, 1, 0.0390625, 1 )
+_sections_unfolded = [ "offsets" ]
 
 [sub_resource type="GradientTexture" id=3]
 
@@ -35,4 +36,3 @@ _sections_unfolded = [ "shape" ]
 scale = Vector2( 1, 20 )
 texture = SubResource( 3 )
 _sections_unfolded = [ "Offset", "Transform", "texture" ]
-
