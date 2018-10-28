@@ -17,7 +17,7 @@ var speed_factor = 1.01
 
 # The maximum possible deflection
 # (relatve to the ball's current horizontal speed)
-var max_deflection = 200
+var max_deflection = 300
 
 func _draw():
 	draw_circle(Vector2(), 10.0, Color(0.9, 0.9, 0.9, 1))
@@ -41,7 +41,7 @@ func _physics_process(delta):
 			var extents = paddle.get_node("CollisionShape2D").shape.extents.x
 
 			# The ball will deflect if it hit close to one of the paddle's edges
-			motion.x += max_deflection * (collision.position.x - paddle.position.x) / extents
+			motion.x = max_deflection * (collision.position.x - paddle.position.x) / extents
 
 func _on_ball_fell():
 	reset()
