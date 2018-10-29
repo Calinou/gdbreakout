@@ -4,6 +4,6 @@
 extends "res://game/brick/brick.gd"
 class_name UnbreakableBrick
 
-func destroy():
+func destroy() -> void:
 	# Brick is unbreakable, do nothing
 	pass

@@ -16,7 +16,7 @@ gradient = SubResource( 1 )
 width = 48
 _sections_unfolded = [ "gradient" ]
 
-[node name="UnbreakableBrick" index="0" groups=[
+[node name="UnbreakableBrick" groups=[
 "ignore_in_brick_count",
 ] instance=ExtResource( 1 )]
 script = ExtResource( 2 )

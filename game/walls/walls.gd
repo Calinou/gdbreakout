@@ -6,6 +6,6 @@ class_name Walls
 
 signal ball_fell
 
-func _on_DeathArea_body_entered(body):
+func _on_death_area_body_entered(body: PhysicsBody2D) -> void:
 	if body is Ball:
 		emit_signal("ball_fell")
