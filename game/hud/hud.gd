@@ -3,8 +3,6 @@
 
 extends Control
 
-export(NodePath) var game_path
-
 onready var ScoreCounter = $Vitals/Score/Counter
 onready var LivesCounter = $Vitals/Lives/Counter
 
