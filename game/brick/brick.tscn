@@ -28,7 +28,7 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision" ]
-item_rarity = 1
+item_rarity = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
