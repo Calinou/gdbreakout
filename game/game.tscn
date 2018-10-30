@@ -22,5 +22,5 @@ start_paddle = NodePath("../Paddle")
 
 [connection signal="lives_changed" from="." to="HUD" method="_on_lives_changed"]
 [connection signal="score_changed" from="." to="HUD" method="_on_score_changed"]
-[connection signal="ball_fell" from="Walls" to="Ball" method="_on_ball_fell"]
 [connection signal="ball_fell" from="Walls" to="." method="_on_ball_fell"]
+[connection signal="ball_fell" from="Walls" to="Ball" method="_on_ball_fell"]

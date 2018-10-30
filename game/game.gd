@@ -43,6 +43,10 @@ func _on_brick_destroyed() -> void:
 	if bricks_left <= 0:
 		change_level("2")
 
+func _on_item_collected(item: Item) -> void:
+	score += item.score
+	emit_signal("score_changed", score)
+
 func _on_ball_fell() -> void:
 	# TODO: Only remove one live if the last ball fell
 	# (in case there are multiple balls)

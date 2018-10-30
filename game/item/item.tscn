@@ -1,39 +1,38 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://game/paddle/paddle.gd" type="Script" id=1]
+[ext_resource path="res://game/item/item.gd" type="Script" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 70, 10 )
+extents = Vector2( 18, 18 )
 
 [sub_resource type="Gradient" id=2]
 
-offsets = PoolRealArray( 0, 0.5, 1 )
-colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0 )
-_sections_unfolded = [ "colors" ]
+offsets = PoolRealArray( 0, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 1, 1, 1, 1 )
 
 [sub_resource type="GradientTexture" id=3]
 
 flags = 4
 gradient = SubResource( 2 )
-width = 140
+width = 36
 _sections_unfolded = [ "gradient" ]
 
-[node name="Paddle" type="KinematicBody2D"]
+[node name="Item" type="KinematicBody2D"]
 input_pickable = false
-collision_layer = 4
-collision_mask = 0
+collision_layer = 0
+collision_mask = 5
 collision/safe_margin = 0.08
 motion/sync_to_physics = false
 script = ExtResource( 1 )
-_sections_unfolded = [ "Collision", "motion" ]
+_sections_unfolded = [ "Collision" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
-_sections_unfolded = [ "Transform", "shape" ]
+_sections_unfolded = [ "shape" ]
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 1, 20 )
+scale = Vector2( 1, 36 )
 texture = SubResource( 3 )
-_sections_unfolded = [ "Animation", "Offset", "Transform", "texture" ]
+_sections_unfolded = [ "Transform", "texture" ]

@@ -20,7 +20,7 @@ _sections_unfolded = [ "gradient" ]
 "ignore_in_brick_count",
 ] instance=ExtResource( 1 )]
 script = ExtResource( 2 )
-_sections_unfolded = [ "Script" ]
+_sections_unfolded = [ "Collision", "Script" ]
 
 [node name="Sprite" parent="." index="1"]
 texture = SubResource( 2 )

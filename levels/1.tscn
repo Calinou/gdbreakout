@@ -66,6 +66,12 @@ position = Vector2( 970, 50 )
 
 [node name="UnbreakableBrick" parent="." instance=ExtResource( 2 )]
 position = Vector2( 570, 200 )
+collision_layer = 1
+collision_mask = 1
+_sections_unfolded = [ "Collision", "Script" ]
 
 [node name="UnbreakableBrick2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 470, 200 )
+collision_layer = 1
+collision_mask = 1
+_sections_unfolded = [ "Collision", "Script" ]
