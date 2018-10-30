@@ -7,20 +7,17 @@
 
 offsets = PoolRealArray( 0, 0.5, 1 )
 colors = PoolColorArray( 0.425781, 0.425781, 0.425781, 1, 0.417969, 0.417969, 0.417969, 0.25098, 0.566406, 0.566406, 0.566406, 1 )
-_sections_unfolded = [ "offsets" ]
 
 [sub_resource type="GradientTexture" id=2]
 
 flags = 4
 gradient = SubResource( 1 )
 width = 48
-_sections_unfolded = [ "gradient" ]
 
 [node name="UnbreakableBrick" groups=[
 "ignore_in_brick_count",
 ] instance=ExtResource( 1 )]
 script = ExtResource( 2 )
-_sections_unfolded = [ "Collision", "Script" ]
 
 [node name="Sprite" parent="." index="1"]
 texture = SubResource( 2 )

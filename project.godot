@@ -39,7 +39,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://game/item/slower_ball.gd"
 }, {
-"base": "StaticBody2D",
+"base": "Brick",
 "class": "UnbreakableBrick",
 "language": "GDScript",
 "path": "res://game/brick/unbreakable_brick.gd"

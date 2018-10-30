@@ -11,14 +11,12 @@ extents = Vector2( 70, 10 )
 
 offsets = PoolRealArray( 0, 0.5, 1 )
 colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0 )
-_sections_unfolded = [ "colors" ]
 
 [sub_resource type="GradientTexture" id=3]
 
 flags = 4
 gradient = SubResource( 2 )
 width = 140
-_sections_unfolded = [ "gradient" ]
 
 [node name="Paddle" type="KinematicBody2D"]
 input_pickable = false
@@ -27,13 +25,10 @@ collision_mask = 0
 collision/safe_margin = 0.08
 motion/sync_to_physics = false
 script = ExtResource( 1 )
-_sections_unfolded = [ "Collision", "motion" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
-_sections_unfolded = [ "Transform", "shape" ]
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 1, 20 )
 texture = SubResource( 3 )
-_sections_unfolded = [ "Animation", "Offset", "Transform", "texture" ]

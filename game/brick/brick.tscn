@@ -11,14 +11,12 @@ extents = Vector2( 24, 10 )
 
 offsets = PoolRealArray( 0, 0.5, 1 )
 colors = PoolColorArray( 0.701477, 1, 0.429688, 1, 0.652832, 1, 0.4375, 0.25098, 0.677185, 1, 0.0390625, 1 )
-_sections_unfolded = [ "offsets" ]
 
 [sub_resource type="GradientTexture" id=3]
 
 flags = 4
 gradient = SubResource( 2 )
 width = 48
-_sections_unfolded = [ "gradient" ]
 
 [node name="Brick" type="StaticBody2D"]
 input_pickable = false
@@ -27,14 +25,11 @@ collision_mask = 0
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 script = ExtResource( 1 )
-_sections_unfolded = [ "Collision" ]
 item_rarity = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
-_sections_unfolded = [ "shape" ]
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 1, 20 )
 texture = SubResource( 3 )
-_sections_unfolded = [ "Offset", "Transform", "texture" ]

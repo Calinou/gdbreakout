@@ -5,7 +5,6 @@
 
 [node name="Level" type="Node2D"]
 position = Vector2( -10, 20 )
-_sections_unfolded = [ "Material", "Pause", "Transform", "Visibility", "Z Index" ]
 
 [node name="Brick2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 70, 50 )
@@ -68,10 +67,8 @@ position = Vector2( 970, 50 )
 position = Vector2( 570, 200 )
 collision_layer = 1
 collision_mask = 1
-_sections_unfolded = [ "Collision", "Script" ]
 
 [node name="UnbreakableBrick2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 470, 200 )
 collision_layer = 1
 collision_mask = 1
-_sections_unfolded = [ "Collision", "Script" ]

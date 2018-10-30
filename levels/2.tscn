@@ -4,7 +4,6 @@
 
 [node name="Level" type="Node2D"]
 position = Vector2( -10, 20 )
-_sections_unfolded = [ "Material", "Pause", "Transform", "Visibility", "Z Index" ]
 
 [node name="Brick2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 70, 130 )

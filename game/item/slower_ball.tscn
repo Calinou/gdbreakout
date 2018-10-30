@@ -13,7 +13,6 @@ colors = PoolColorArray( 0, 0, 0, 1, 0.214844, 0.687164, 1, 1 )
 flags = 4
 gradient = SubResource( 1 )
 width = 36
-_sections_unfolded = [ "gradient" ]
 
 [node name="SlowerBallItem" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
