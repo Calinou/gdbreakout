@@ -21,6 +21,7 @@ func _ready() -> void:
 
 func destroy() -> void:
 	randomize()
+	$AnimationPlayer.play("destroy")
 
 	if randi() % item_rarity == 0:
 		# Pick a random item and spawn it
@@ -29,4 +30,6 @@ func destroy() -> void:
 		item.position = position
 
 	emit_signal("brick_destroyed")
+
+func _on_animation_finished(animation: String) -> void:
 	queue_free()
