@@ -29,6 +29,8 @@ func _physics_process(delta: float) -> void:
 	var collision = move_and_collide(motion * delta)
 
 	if collision:
+		$AudioStreamPlayer.stream = load("res://game/ball/bounce." + str(randi() % 4) + ".wav")
+		$AudioStreamPlayer.play()
 		motion = motion.bounce(collision.normal)
 		motion *= speed_factor
 

@@ -16,6 +16,8 @@ var level: Node
 var bricks_left = 0
 
 func _ready() -> void:
+	randomize()
+
 	# This is required to make the HUD display correct values on startup
 	emit_signal("score_changed", score)
 	emit_signal("lives_changed", lives)

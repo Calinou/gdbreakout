@@ -20,7 +20,6 @@ func _ready() -> void:
 	connect("brick_destroyed", $"/root/Game", "_on_brick_destroyed")
 
 func destroy() -> void:
-	randomize()
 	$AnimationPlayer.play("destroy")
 
 	if randi() % item_rarity == 0:
