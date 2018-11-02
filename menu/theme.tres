@@ -16,4 +16,3 @@ _sections_unfolded = [ "Font", "Settings", "font_data" ]
 
 default_font = SubResource( 1 )
 _sections_unfolded = [ "default_font" ]
-

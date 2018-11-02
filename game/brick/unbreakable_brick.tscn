@@ -14,7 +14,7 @@ flags = 4
 gradient = SubResource( 1 )
 width = 48
 
-[node name="UnbreakableBrick" groups=[
+[node name="UnbreakableBrick" index="0" groups=[
 "ignore_in_brick_count",
 ] instance=ExtResource( 1 )]
 script = ExtResource( 2 )

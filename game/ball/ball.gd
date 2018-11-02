@@ -10,7 +10,7 @@ export(NodePath) var start_paddle
 var motion = Vector2()
 
 # The starting ball speed
-var base_speed = 275
+const BASE_SPEED = 275
 
 # Speed factor on every bounce
 var speed_factor = 1.01
@@ -51,4 +51,4 @@ func _on_ball_fell() -> void:
 func reset() -> void:
 	var paddle = get_node(start_paddle)
 	position = Vector2(paddle.position.x, paddle.position.y - 20)
-	motion = Vector2(0, -base_speed)
+	motion = Vector2(0, -BASE_SPEED)
