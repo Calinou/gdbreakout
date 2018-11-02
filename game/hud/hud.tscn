@@ -52,7 +52,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 split_offset = 0
 collapsed = false
-dragger_visibility = 0
+dragger_visibility = 1
 
 [node name="Label" type="Label" parent="Vitals/Score"]
 anchor_left = 0.0
@@ -108,7 +108,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 split_offset = 0
 collapsed = false
-dragger_visibility = 0
+dragger_visibility = 1
 
 [node name="Label" type="Label" parent="Vitals/Lives"]
 anchor_left = 0.0
